@@ -1,0 +1,17 @@
+[
+  {
+    "repository": "wasimafser/device_xiaomi_msm8998-common",
+    "target_path": "device/xiaomi/msm8998-common",
+    "branch": "lineage-16.0"
+  },
+  {
+    "repository": "wasimafser/kernel_xiaomi_msm8998",
+    "target_path": "kernel/xiaomi/msm8998"
+    "branch": "lineage-16.0"
+  },
+  {
+    "repository": "wasimafser/proprietary_vendor_xiaomi",
+    "target_path": "vendor/xiaomi"
+    "branch": "lineage-16.0"
+  }
+]
