@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/potato_chiron.mk
+    $(LOCAL_DIR)/dot_chiron.mk
