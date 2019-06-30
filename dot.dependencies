@@ -6,12 +6,12 @@
   },
   {
     "repository": "wasimafser/kernel_xiaomi_msm8998",
-    "target_path": "kernel/xiaomi/msm8998"
+    "target_path": "kernel/xiaomi/msm8998",
     "branch": "lineage-16.0-nonsar"
   },
   {
     "repository": "wasimafser/vendor_xiaomi",
-    "target_path": "vendor/xiaomi"
+    "target_path": "vendor/xiaomi",
     "branch": "lineage-16.0"
   }
 ]
