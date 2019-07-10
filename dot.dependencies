@@ -1,16 +1,16 @@
 [
   {
-    "repository": "wasimafser/device_xiaomi_msm8998-common",
+    "repository": "android_device_xiaomi_msm8998-common_chiron",
     "target_path": "device/xiaomi/msm8998-common",
     "branch": "dot-p"
   },
   {
-    "repository": "wasimafser/kernel_xiaomi_msm8998",
+    "repository": "android_kernel_xiaomi_chiron",
     "target_path": "kernel/xiaomi/msm8998",
     "branch": "dot-p"
   },
   {
-    "repository": "wasimafser/vendor_xiaomi",
+    "repository": "vendor_xiaomi",
     "target_path": "vendor/xiaomi",
     "branch": "dot-p"
   }
