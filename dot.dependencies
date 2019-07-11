@@ -10,7 +10,7 @@
     "branch": "dot-p"
   },
   {
-    "repository": "vendor_xiaomi",
+    "repository": "vendor_xiaomi_chiron",
     "target_path": "vendor/xiaomi",
     "branch": "dot-p"
   }
