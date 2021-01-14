@@ -23,7 +23,7 @@ $(call inherit-product, device/xiaomi/chiron/device.mk)
 $(call inherit-product-if-exists, vendor/apps/GoogleCamera/config.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/aosp/config/common.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 PRODUCT_NAME := aosp_chiron
 PRODUCT_DEVICE := chiron
