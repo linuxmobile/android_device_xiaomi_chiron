@@ -1,4 +1,4 @@
-Copyright (C) 2017 The LineageOS Project
+Copyright (C) 2020 The dotOS Project
 
 Device configuration for Xiaomi Mi MIX 2
 =========================================
