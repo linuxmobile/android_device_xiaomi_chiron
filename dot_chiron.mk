@@ -18,9 +18,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some chiron stuff
+# Inherit from chiron device
 $(call inherit-product, device/xiaomi/chiron/device.mk)
-$(call inherit-product-if-exists, vendor/apps/GoogleCamera/config.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/dot/config/common.mk)
@@ -30,7 +29,6 @@ PRODUCT_DEVICE := chiron
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi MIX 2
 PRODUCT_MANUFACTURER := Xiaomi
-DEVICE_MAINTAINER := WhiterWalt
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
@@ -39,5 +37,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 BUILD_FINGERPRINT := Xiaomi/chiron/chiron:8.0.0/OPR1.170623.027/V9.5.4.0.ODEMIFA:user/release-keys
 
+# Rom config 
 WITH_GAPPS := true
 TARGET_SUPPORTS_BLUR := true
+TARGET_BOOT_ANIMATION_RES := 1080
+

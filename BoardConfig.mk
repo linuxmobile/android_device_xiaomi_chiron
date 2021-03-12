@@ -28,9 +28,7 @@ TARGET_OTA_ASSERT_DEVICE := chiron
 # Audio
 AUDIO_FEATURE_ELLIPTIC_ULTRASOUND_SUPPORT := true
 
-# Build 
-BUILD_BROKEN_PREBUILT_ELF_FILES := true
-BUILD_BROKEN_DUP_RULES := true
+# Build
 BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
 
 # Recovery
@@ -40,7 +38,7 @@ TARGET_RECOVERY_UI_MARGIN_STATUSBAR := 50
 TARGET_SCREEN_DENSITY := 400
 
 # SELinux
-BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # Inherit from proprietary files
 include vendor/xiaomi/chiron/BoardConfigVendor.mk

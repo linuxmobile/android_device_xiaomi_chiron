@@ -14,9 +14,6 @@
 # limitations under the License.
 #
 
-# AAPT
-PRODUCT_AAPT_PREF_CONFIG := 400dpi
-
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
@@ -38,6 +35,10 @@ PRODUCT_COPY_FILES += \
 
 # Properties
 include $(LOCAL_PATH)/vendor_prop.mk
+
+# Wifi
+PRODUCT_PACKAGES += \
+    ChironWifiOverlay
 
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/chiron/chiron-vendor.mk)
