@@ -20,7 +20,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some chiron stuff
 $(call inherit-product, device/xiaomi/chiron/device.mk)
-$(call inherit-product-if-exists, vendor/apps/GoogleCamera/config.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/dot/config/common.mk)
