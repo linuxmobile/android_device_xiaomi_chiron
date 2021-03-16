@@ -1,4 +1,4 @@
-Copyright (C) 2021 The dotOS Project
+Copyright (C) 2020 The dotOS Project
 
 Device configuration for Xiaomi Mi MIX 2
 =========================================
