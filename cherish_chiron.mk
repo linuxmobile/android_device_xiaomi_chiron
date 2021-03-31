@@ -22,14 +22,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/chiron/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/dot/config/common.mk)
+$(call inherit-product, vendor/cherish/config/common.mk)
 
-PRODUCT_NAME := dot_chiron
+PRODUCT_NAME := cherish_chiron
 PRODUCT_DEVICE := chiron
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi MIX 2
 PRODUCT_MANUFACTURER := Xiaomi
-DEVICE_MAINTAINER := WhiterWalt
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
@@ -38,7 +37,17 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 BUILD_FINGERPRINT := Xiaomi/chiron/chiron:8.0.0/OPR1.170623.027/V9.5.4.0.ODEMIFA:user/release-keys
 
-WITH_GAPPS := true
-TARGET_SUPPORTS_BLUR := true
-#DOT_OFFICIAL := true
+# Boot Animation
 TARGET_BOOT_ANIMATION_RES := 1080
+
+# Gapps
+TARGET_GAPPS_ARCH := arm64
+TARGET_INCLUDE_WIFI_EXT := true
+CHERISH_WITHGAPPS := true
+
+# Official
+CHERISH_BUILD_TYPE:= UNOFFICIAL
+
+# Maintainer
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.cherish.maintainer=linuxmobile
