@@ -46,8 +46,8 @@ TARGET_INCLUDE_WIFI_EXT := true
 CHERISH_WITHGAPPS := true
 
 # Official
-CHERISH_BUILD_TYPE:= UNOFFICIAL
+CHERISH_BUILD_TYPE:= OFFICIAL
 
 # Maintainer
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.cherish.maintainer=linuxmobile
+    ro.cherish.maintainer= linuxmobile
