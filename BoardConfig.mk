@@ -44,5 +44,8 @@ TARGET_SCREEN_DENSITY := 400
 # SELinux
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
+# Properties
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
+
 # Inherit from proprietary files
 include vendor/xiaomi/chiron/BoardConfigVendor.mk
