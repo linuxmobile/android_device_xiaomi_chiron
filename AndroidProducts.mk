@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cherish_chiron.mk
+    $(LOCAL_DIR)/kangos_chiron.mk
 
 COMMON_LUNCH_CHOICES := \
-    cherish_chiron-user \
-    cherish_chiron-userdebug \
-    cherish_chiron-eng
+    kangos_chiron-user \
+    kangos_chiron-userdebug \
+    kangos_chiron-eng
