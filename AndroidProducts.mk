@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2017-2018 The LineageOS Project
+# Copyright (C) 2021 The Nusantara Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cherish_chiron.mk
+    $(LOCAL_DIR)/nad_chiron.mk
 
 COMMON_LUNCH_CHOICES := \
-    cherish_chiron-user \
-    cherish_chiron-userdebug \
-    cherish_chiron-eng
+    nad_chiron-user \
+    nad_chiron-userdebug \
+    nad_chiron-eng

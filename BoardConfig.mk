@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2017 The LineageOS Project
+# Copyright (C) 2021 The Nusantara Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -44,8 +44,14 @@ TARGET_SCREEN_DENSITY := 400
 # SELinux
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
+# Platform
+BOARD_USES_QCOM_HARDWARE := true
+#TARGET_BOARD_PLATFORM := msmnile
+TARGET_BOARD_PLATFORM_GPU := qcom-adreno540
+
 # Properties
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
 
 # Inherit from proprietary files
 include vendor/xiaomi/chiron/BoardConfigVendor.mk
+

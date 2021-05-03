@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2017 The LineageOS Project
+# Copyright (C) 2021 The Nusantara Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -20,7 +20,7 @@ PRODUCT_AAPT_PREF_CONFIG := 400dpi
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-cherish
+    $(LOCAL_PATH)/overlay-nad
 
 # Inherit from msm8998-common
 $(call inherit-product, device/xiaomi/msm8998-common/msm8998.mk)
