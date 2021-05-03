@@ -55,3 +55,5 @@ TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
 # Inherit from proprietary files
 include vendor/xiaomi/chiron/BoardConfigVendor.mk
 
+#BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+SELINUX_IGNORE_NEVERALLOWS := true
