@@ -50,6 +50,7 @@ BOARD_USES_QCOM_HARDWARE := true
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno540
 
 # Properties
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/vendor.prop
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
 
 # Inherit from proprietary files
