@@ -22,7 +22,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/chiron/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/nusantara/config/common.mk)
+$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
 
 PRODUCT_NAME := nad_chiron
 PRODUCT_DEVICE := chiron
@@ -45,7 +45,8 @@ TARGET_USES_BLUR := true
 USE_PIXEL_CHARGING := true
 NAD_BUILD_TYPE := UNOFFICIAL
 TARGET_BOOT_ANIMATION_RES := 1080
-USE_GAPPS ?= true
+#USE_GAPPS ?= true
+#TARGET_GAPPS_ARCH := arm64
 #USE_AOSP_CLOCK := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 
