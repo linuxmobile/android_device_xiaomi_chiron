@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cherish_chiron.mk
+    $(LOCAL_DIR)/nad_chiron.mk
 
 COMMON_LUNCH_CHOICES := \
-    cherish_chiron-user \
-    cherish_chiron-userdebug \
-    cherish_chiron-eng
+    nad_chiron-user \
+    nad_chiron-userdebug \
+    nad_chiron-eng

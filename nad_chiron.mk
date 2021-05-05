@@ -22,9 +22,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/chiron/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/cherish/config/common.mk)
+$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
 
-PRODUCT_NAME := cherish_chiron
+PRODUCT_NAME := nad_chiron
 PRODUCT_DEVICE := chiron
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi MIX 2
@@ -38,24 +38,13 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 BUILD_FINGERPRINT := "google/redfin/redfin:11/RQ2A.210405.005/7181113:user/release-keys"
 
-# Boot Animation
+TARGET_USES_BLUR := true
+USE_PIXEL_CHARGING := true
+NAD_BUILD_TYPE := UNOFFICIAL
 TARGET_BOOT_ANIMATION_RES := 1080
+#USE_GAPPS ?= true
+#TARGET_GAPPS_ARCH := arm64
+#USE_AOSP_CLOCK := true
 
-# Gapps
-TARGET_GAPPS_ARCH := arm64
-TARGET_INCLUDE_WIFI_EXT := true
-CHERISH_WITHGAPPS := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
-
-# Non-Gapps
-# CHERISH_NONGAPPS=true
-
-# Official
-CHERISH_BUILD_TYPE:= OFFICIAL
-
-# Maintainer
-PRODUCT_GENERIC_PROPERTIES += \
-    ro.cherish.maintainer= linuxmobile
-    
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.fingerprint=google/redfin/redfin:11/RQ2A.210405.005/7181113:user/release-keys

@@ -45,7 +45,16 @@ TARGET_SCREEN_DENSITY := 400
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # Properties
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/vendor.prop
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
 
 # Inherit from proprietary files
 include vendor/xiaomi/chiron/BoardConfigVendor.mk
+
+# Platform
+BOARD_USES_QCOM_HARDWARE := true
+#TARGET_BOARD_PLATFORM := msmnile
+TARGET_BOARD_PLATFORM_GPU := qcom-adreno540
+
+#BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+SELINUX_IGNORE_NEVERALLOWS := true
