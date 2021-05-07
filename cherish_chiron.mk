@@ -22,7 +22,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/chiron/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/cherish/config/common.mk)
+$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
 PRODUCT_NAME := cherish_chiron
 PRODUCT_DEVICE := chiron
@@ -33,13 +33,16 @@ PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="redfin-user 11 RQ2A.210405.005 7181113 release-keys" \
+    PRIVATE_BUILD_DESC="redfin-user 11 RQ2A.210505.003 7255357 release-keys" \
 
 
-BUILD_FINGERPRINT := "google/redfin/redfin:11/RQ2A.210405.005/7181113:user/release-keys"
+BUILD_FINGERPRINT := "google/redfin/redfin:11/RQ2A.210505.003/7255357:user/release-keys"
 
 # Boot Animation
 TARGET_BOOT_ANIMATION_RES := 1080
+
+# Add livewallpapers
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
 
 # Gapps
 TARGET_GAPPS_ARCH := arm64
@@ -58,4 +61,4 @@ PRODUCT_GENERIC_PROPERTIES += \
     ro.cherish.maintainer= linuxmobile
     
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.fingerprint=google/redfin/redfin:11/RQ2A.210405.005/7181113:user/release-keys
+    ro.build.fingerprint=google/redfin/redfin:11/RQ2A.210505.003/7255357:user/release-keys
