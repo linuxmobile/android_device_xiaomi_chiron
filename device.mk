@@ -20,7 +20,7 @@ PRODUCT_AAPT_PREF_CONFIG := 400dpi
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-descendant
+    $(LOCAL_PATH)/overlay-evolution
 
 # Inherit from msm8998-common
 $(call inherit-product, device/xiaomi/msm8998-common/msm8998.mk)
@@ -28,7 +28,6 @@ $(call inherit-product, device/xiaomi/msm8998-common/msm8998.mk)
 # APN
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/etc/apns-conf.xml:system/etc/apns-conf.xml
-
 
 # Audio
 PRODUCT_COPY_FILES += \

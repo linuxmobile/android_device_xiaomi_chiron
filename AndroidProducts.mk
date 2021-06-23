@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/descendant_chiron.mk
+    $(LOCAL_DIR)/evolution_chiron.mk
 
 COMMON_LUNCH_CHOICES := \
-    descendant_chiron-user \
-    descendant_chiron-userdebug \
-    descendant_chiron-eng
+    evolution_chiron-user \
+    evolution_chiron-userdebug \
+    evolution_chiron-eng
