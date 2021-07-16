@@ -33,7 +33,7 @@ PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="redfin-user 11 RQ2A.210605.003 7255357 release-keys" \
+    PRIVATE_BUILD_DESC="redfin-user 11 RQ3A.210705.001 7380771 release-keys" \
 
 # Boot Animation
 TARGET_BOOT_ANIMATION_RES := 1080
@@ -42,27 +42,24 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
 
 # Gapps
-TARGET_GAPPS_ARCH := arm64
-TARGET_INCLUDE_WIFI_EXT := true
-CHERISH_WITHGAPPS := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
+WITH_GMS := true
 
 # Non-Gapps
 # CHERISH_NONGAPPS=true
 
 # Official
-CHERISH_BUILD_TYPE:= UNOFFICIAL
+CHERISH_BUILD_TYPE:= OFFICIAL
 
 # Maintainer
 PRODUCT_GENERIC_PROPERTIES += \
     ro.cherish.maintainer= linuxmobile
 
 
-BUILD_FINGERPRINT := "google/redfin/redfin:11/RQ2A.210505.003/7255357:user/release-keys"
+BUILD_FINGERPRINT := "google/redfin/redfin:11/RQ3A.210705.001/7380771:user/release-keys"
 
 # Boot Animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
     
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.fingerprint=google/redfin/redfin:11/RQ2A.210505.003/7255357:user/release-keys
+    ro.build.fingerprint=google/redfin/redfin:11/RQ3A.210705.001/7380771:user/release-keys
